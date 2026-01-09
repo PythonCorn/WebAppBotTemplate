@@ -2,7 +2,7 @@ from fastapi import FastAPI, APIRouter
 
 from app.bot.api import webhook_bot
 from app.core.lifespan import lifespan
-from app.payments.api import payments_router
+from app.domains.payments.api import payments_router
 from app.webapp.api import webapp_router
 
 app = FastAPI(lifespan=lifespan)

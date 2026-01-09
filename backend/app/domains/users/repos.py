@@ -4,7 +4,7 @@ from typing import Optional
 from sqlalchemy import select
 
 from app.database import User
-from app.database.repos.base import BaseRepo
+from app.database.base_repository import BaseRepo
 
 
 class UserRepo(BaseRepo):

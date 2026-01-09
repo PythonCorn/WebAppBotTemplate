@@ -3,7 +3,7 @@ from fastapi.params import Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.db import get_db
-from app.database.repos.user import UserRepo
+from app.domains.users.repos import UserRepo
 from app.webapp.schemas import WebAppAuthRequest
 from app.webapp.schemas import WebAppInitDataResponse, UserSchema
 from app.core.security import telegram_auth
