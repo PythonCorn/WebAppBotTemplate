@@ -13,5 +13,6 @@ class XRocketData(BaseModel):
     link: Optional[str]
 
 class XRocketInvoiceResponse(BaseModel):
-    success: bool
-    data: XRocketData
+    success: bool = True
+    error: Optional[str] = None
+    data: Optional[XRocketData] = None
